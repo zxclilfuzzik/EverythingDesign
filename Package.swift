@@ -23,6 +23,5 @@ let package = Package(
         .target(
             name: "EverythingDesign",
             dependencies: []),
-
     ]
 )
