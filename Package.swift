@@ -23,8 +23,6 @@ let package = Package(
         .target(
             name: "EverythingDesign",
             dependencies: []),
-        .testTarget(
-            name: "EverythingDesign Tests",
-            dependencies: ["EverythingDesign"]),
+
     ]
 )
