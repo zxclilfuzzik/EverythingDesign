@@ -1,7 +1,7 @@
 import XCTest
-@testable import EverythingDesign_v1
+@testable import EverythingDesign
 
-final class EverythingDesign_v1Tests: XCTestCase {
+final class EverythingDesign_Tests: XCTestCase {
     func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
