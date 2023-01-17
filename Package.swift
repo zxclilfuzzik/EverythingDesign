@@ -11,7 +11,7 @@ let package = Package(
         .library(
             name: "EverythingDesign",
             type: .dynamic,
-            targets: ["EverythingDesign"]),
+            targets: ["EverythingDesign", "UIButtonSet"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
