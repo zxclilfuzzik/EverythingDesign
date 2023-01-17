@@ -1,6 +1,10 @@
 import SwiftUI
 import UIKit
 
+public struct EverythingDesign {
+    public init() {}
+}
+
 let widths = UIWindow().screen.bounds.width * 0.95
 
 public struct UINavigationPanel: View {
