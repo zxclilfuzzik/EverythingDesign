@@ -26,6 +26,10 @@ let package = Package(
         .target(
             name: "UIButtonSet",
             path: "Sources/UIButton"
+        ),
+        .target(
+            name: "UITextFiledSet",
+            path: "Sources/UITextField"
         )
     ]
 )
