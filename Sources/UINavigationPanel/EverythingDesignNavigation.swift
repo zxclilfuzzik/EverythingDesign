@@ -10,13 +10,15 @@ import SwiftUI
 public struct UINavigationPanel: View {
     
     var title: String
+    var bgColor: Color = Color("BGColor")
     var icon: String
     var iconTwo: String = ""
     
-    public init(title: String, icon: String, iconTwo: String) {
+    public init(title: String, icon: String, iconTwo: String, bgColor: Color) {
         self.title = title
         self.icon = icon
         self.iconTwo = iconTwo
+        self.bgColor = bgColor
     }
     
     public var body: some View {
