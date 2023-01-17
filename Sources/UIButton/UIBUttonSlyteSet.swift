@@ -41,3 +41,9 @@ struct ButtonPress: ViewModifier {
             )
     }
 }
+
+extension View {
+    func pressButton(onPress: @escaping (() -> Void), onRealese: @escaping (() -> Void)) -> some View {
+        modifier(ButtonPress(onPress: {onPress()}, onRealese: {onRealese()}))
+    }
+}
