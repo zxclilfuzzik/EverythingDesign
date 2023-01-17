@@ -6,6 +6,12 @@ public struct UITextField: View {
     var text: Binding<String>
     var isSecure: Bool = false
     
+    public init(title: String, text: Binding<String>, isSecure: Bool) {
+        self.title = title
+        self.text = text
+        self.isSecure = isSecure
+    }
+    
     public var body: some View {
         if !isSecure {
             TextField(self.title, text: self.text)
@@ -22,6 +28,10 @@ public struct UITextField: View {
 public struct UITextFieldNoFocused: View {
     
     var title: String
+    
+    public init(title: String) {
+        self.title = title
+    }
     
     public var body: some View {
         ZStack {

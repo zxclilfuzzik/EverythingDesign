@@ -14,6 +14,13 @@ public struct UINavSearchablePanel: ViewModifier {
     var searchPromt: String = "Search"
     var icon: String = "plus"
     
+    public init(title: String, searchAuery: Binding<String>, searchPromt: String, icon: String) {
+        self.title = title
+        self.searchAuery = searchAuery
+        self.searchPromt = searchPromt
+        self.icon = icon
+    }
+    
     public func body(content: Content) -> some View {
         content
             .toolbar {
@@ -40,6 +47,11 @@ public struct UINavPanel: ViewModifier {
     var title: String
     var icon: String = "plus"
     
+    public init(title: String, icon: String) {
+        self.title = title
+        self.icon = icon
+    }
+    
     public func body(content: Content) -> some View {
         content
             .toolbar {
@@ -64,6 +76,11 @@ public struct UINavBackButtonPanel: ViewModifier {
     
     var action: () -> Void
     var title: String
+    
+    public init(action: @escaping () -> Void, title: String) {
+        self.action = action
+        self.title = title
+    }
     
     public func body(content: Content) -> some View {
         content
