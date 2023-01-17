@@ -3,11 +3,11 @@ import SwiftUI
 
 let widths = UIWindow().screen.bounds.width * 0.95
 
-//public struct EverythingDesign {
-//    //    public private(set) var text = "Hello, World!"
-//
-//    public init() {}
-//}
+public struct EverythingDesign {
+    //    public private(set) var text = "Hello, World!"
+
+    public init() {}
+}
 
 public struct UIAlertText: View {
     
