@@ -10,9 +10,9 @@ import SwiftUI
 public struct UINavigationPanel: View {
     
     var title: String
-    var bgColor: Color = Color("BGColor")
+    var bgColor: Color
     var icon: String
-    var iconTwo: String = ""
+    var iconTwo: String
     
     public init(title: String, icon: String, iconTwo: String, bgColor: Color) {
         self.title = title
@@ -23,7 +23,7 @@ public struct UINavigationPanel: View {
     
     public var body: some View {
         ZStack {
-            Color.black
+            Color(bgColor as! CGColor)
                 .ignoresSafeArea()
             HStack(spacing: 0) {
                 Text(title)
