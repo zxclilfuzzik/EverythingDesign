@@ -64,7 +64,7 @@ public struct UITextButton: View {
     public var body: some View {
         Button(action: action) {
             Text(text)
-                .bold()
+                .fontWeight(.semibold)
                 .foregroundColor(color)
         }
     }
