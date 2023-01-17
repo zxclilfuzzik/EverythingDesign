@@ -11,10 +11,12 @@ public struct UINavigationPanel: View {
     
     var title: String
     var icon: String
+    var iconTwo: String = ""
     
-    public init(title: String, icon: String) {
+    public init(title: String, icon: String, iconTwo: String) {
         self.title = title
         self.icon = icon
+        self.iconTwo = iconTwo
     }
     
     public var body: some View {
@@ -24,18 +26,26 @@ public struct UINavigationPanel: View {
             HStack(spacing: 0) {
                 Text(title)
                     .foregroundColor(.white)
-                    .font(.largeTitle)
+                    .font(.system(size: 26))
                     .bold()
                 Spacer()
-                Button(action: {}, label: {
-                    Image(systemName: icon)
-                        .font(.system(size: 20))
-                        .foregroundColor(.white)
-                })
+                HStack(spacing: 0) {
+                    Button(action: {}, label: {
+                        Image(systemName: iconTwo)
+                            .font(.system(size: 21))
+                            .foregroundColor(.white)
+                    })
+                    Button(action: {}, label: {
+                        Image(systemName: icon)
+                            .font(.system(size: 21))
+                            .foregroundColor(.white)
+                    })
+                }
             }
+            .padding(.horizontal, 16)
         }
         .frame(height: 105)
-        .shadow(radius: 4)
+        .shadow(color: .black.opacity(0.6), radius: 20)
     }
 }
 
