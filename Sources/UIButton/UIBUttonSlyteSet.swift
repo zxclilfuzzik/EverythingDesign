@@ -20,30 +20,31 @@ struct largeButtonStyle: ButtonStyle {
             .foregroundColor(.white)
             .cornerRadius(50)
             .font(.system(size: 17))
+            .scaleEffect(configuration.isPressed ? 0.9 : 1.0)
     }
 }
 
-struct ButtonPress: ViewModifier {
-    
-    var onPress: () -> Void
-    var onRealese: () -> Void
-    
-    func body(content: Content) -> some View {
-        content
-            .simultaneousGesture(
-            DragGesture(minimumDistance: 0)
-                .onChanged({ _ in
-                    onPress()
-                })
-                .onEnded({ _ in
-                    onRealese()
-                })
-            )
-    }
-}
-
-extension View {
-    func pressButton(onPress: @escaping (() -> Void), onRealese: @escaping (() -> Void)) -> some View {
-        modifier(ButtonPress(onPress: {onPress()}, onRealese: {onRealese()}))
-    }
-}
+//struct ButtonPress: ViewModifier {
+//    
+//    var onPress: () -> Void
+//    var onRealese: () -> Void
+//    
+//    func body(content: Content) -> some View {
+//        content
+//            .simultaneousGesture(
+//            DragGesture(minimumDistance: 0)
+//                .onChanged({ _ in
+//                    onPress()
+//                })
+//                .onEnded({ _ in
+//                    onRealese()
+//                })
+//            )
+//    }
+//}
+//
+//extension View {
+//    func pressButton(onPress: @escaping (() -> Void), onRealese: @escaping (() -> Void)) -> some View {
+//        modifier(ButtonPress(onPress: {onPress()}, onRealese: {onRealese()}))
+//    }
+//}
