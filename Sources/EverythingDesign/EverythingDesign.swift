@@ -24,7 +24,12 @@ public struct UINavigationPanel: View {
                 .font(.largeTitle)
                 .bold()
             Spacer()
-            Button(action: {}, label: {Image(systemName: icon).foregroundColor(.white)})
+            Button(action: {}, label: {
+                Image(systemName: icon)
+                    .font(.system(size: 20))
+                    .foregroundColor(.white)
+            })
         }
+        .shadow(radius: 4)
     }
 }
