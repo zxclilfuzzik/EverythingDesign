@@ -29,6 +29,20 @@ public struct UILargeButton: View {
         .buttonStyle(largeButtonStyle(color: self.color))
     }
 }
+// // // // // //
+
+public struct UILargeButtonVKID: View {
+    
+    var action: () -> Void
+    
+    public var body: some View {
+        Button(action: self.action) {
+            Text("Войти через VK ID")
+                .buttonStyle(largeButtonStyle(color: .white))
+        }
+    }
+}
+// // // // // //
 
 public struct UITextButton: View {
     
