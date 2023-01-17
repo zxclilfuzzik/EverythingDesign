@@ -26,10 +26,10 @@ public struct UINavigationPanel: View {
             HStack(spacing: 0) {
                 Text(title)
                     .foregroundColor(.white)
-                    .font(.system(size: 26))
+                    .font(.largeTitle)
                     .bold()
                 Spacer()
-                HStack(spacing: 0) {
+                HStack(spacing: 20) {
                     Button(action: {}, label: {
                         Image(systemName: iconTwo)
                             .font(.system(size: 21))
