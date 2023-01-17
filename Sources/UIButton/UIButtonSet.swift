@@ -27,7 +27,6 @@ public struct UILargeButton: View {
                 .foregroundColor(textColor)
         })
         .buttonStyle(largeButtonStyle(color: self.color))
-//        .pressButton(onPress: {}, onRealese: {})
     }
 }
 
