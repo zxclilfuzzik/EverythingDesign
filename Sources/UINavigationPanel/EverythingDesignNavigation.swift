@@ -79,6 +79,6 @@ public struct UINavPanelBackButton: View {
                 .foregroundColor(.clear)
                 .font(.system(size: 20))
         }
-//        .padding(.top, 6)
+        .padding(.top, 6)
     }
 }
