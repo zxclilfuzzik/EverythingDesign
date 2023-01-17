@@ -22,3 +22,22 @@ struct largeButtonStyle: ButtonStyle {
             .font(.system(size: 17))
     }
 }
+
+struct ButtonPress: ViewModifier {
+    
+    var onPress: () -> Void
+    var onRealese: () -> Void
+    
+    func body(content: Content) -> some View {
+        content
+            .simultaneousGesture(
+            DragGesture(minimumDistance: 0)
+                .onChanged({ _ in
+                    onPress()
+                })
+                .onEnded({ _ in
+                    onRealese()
+                })
+            )
+    }
+}
