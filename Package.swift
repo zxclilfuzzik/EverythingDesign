@@ -11,7 +11,7 @@ let package = Package(
         .library(
             name: "EverythingDesign",
             type: .dynamic,
-            targets: ["EverythingDesign", "UIButtonSet"]),
+            targets: ["EverythingDesign", "EverythingDesignButton", "EverythingDesignAlert", "EverythingDesignTextField"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -24,12 +24,14 @@ let package = Package(
             name: "EverythingDesign",
             dependencies: []),
         .target(
-            name: "UIButtonSet",
+            name: "EverythingDesignButton",
             path: "Sources/UIButton"
         ),
         .target(
-            name: "UITextFiledSet",
+            name: "EverythingDesignTextField",
             path: "Sources/UITextField"
-        )
+        ),
+        .target(name: "EverythingDesignAlert",
+                path: "Sources/UIAlert")
     ]
 )

@@ -18,17 +18,21 @@ public struct UINavigationPanel: View {
     }
     
     public var body: some View {
-        HStack(spacing: 0) {
-            Text(title)
-                .foregroundColor(.white)
-                .font(.largeTitle)
-                .bold()
-            Spacer()
-            Button(action: {}, label: {
-                Image(systemName: icon)
-                    .font(.system(size: 20))
+        ZStack {
+            Color.black
+                .ignoresSafeArea()
+            HStack(spacing: 0) {
+                Text(title)
                     .foregroundColor(.white)
-            })
+                    .font(.largeTitle)
+                    .bold()
+                Spacer()
+                Button(action: {}, label: {
+                    Image(systemName: icon)
+                        .font(.system(size: 20))
+                        .foregroundColor(.white)
+                })
+            }
         }
         .shadow(radius: 4)
     }
