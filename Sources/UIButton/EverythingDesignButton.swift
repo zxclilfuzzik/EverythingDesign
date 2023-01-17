@@ -38,8 +38,8 @@ public struct UILargeButtonVKID: View {
     public var body: some View {
         Button(action: self.action) {
             Text("Войти через VK ID")
-                .buttonStyle(largeButtonStyle(color: .white))
         }
+        .buttonStyle(largeButtonStyle(color: .white))
     }
 }
 // // // // // //
