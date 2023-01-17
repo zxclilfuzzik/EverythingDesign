@@ -14,6 +14,13 @@ public struct UILargeButton: View {
     var textColor: Color = .white
     var action: () -> Void = {}
     
+    public init(text: String, color: Color, textColor: Color, action: @escaping () -> Void) {
+        self.text = text
+        self.color = color
+        self.textColor = textColor
+        self.action = action
+    }
+    
     public var body: some View {
         Button(action: self.action, label: {
             Text(self.text)
@@ -29,6 +36,12 @@ public struct UITextButton: View {
     var text: String
     var color: Color = .white
     
+    public init(action: @escaping () -> Void, text: String, color: Color) {
+        self.action = action
+        self.text = text
+        self.color = color
+    }
+    
     public var body: some View {
         Button(action: action) {
             Text(text)
@@ -43,6 +56,12 @@ public struct UILargeSearchButton: View {
     var text: String = "Text"
     var color: Color = .accentColor
     var action: () -> Void = {}
+    
+    public init(text: String, color: Color, action: @escaping () -> Void) {
+        self.text = text
+        self.color = color
+        self.action = action
+    }
     
     public var body: some View {
         Button(action: action) {

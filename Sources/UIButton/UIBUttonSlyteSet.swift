@@ -18,7 +18,7 @@ struct largeButtonStyle: ButtonStyle {
             .frame(width: widths, height: 50)
             .background(self.color)
             .foregroundColor(.white)
-            .cornerRadius(15)
+            .cornerRadius(50)
             .font(.system(size: 17))
     }
 }
