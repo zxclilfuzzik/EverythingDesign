@@ -4,8 +4,10 @@
 //
 //  Created by lilfuzzik on 13.01.2023.
 //
-
+import UIKit
 import SwiftUI
+
+let widths = UIWindow().screen.bounds.width * 0.95
 
 struct largeButtonStyle: ButtonStyle {
     

@@ -23,5 +23,9 @@ let package = Package(
         .target(
             name: "EverythingDesign",
             dependencies: []),
+        .target(
+            name: "UIButtonSet",
+            path: "Sources/UIButton"
+        )
     ]
 )
