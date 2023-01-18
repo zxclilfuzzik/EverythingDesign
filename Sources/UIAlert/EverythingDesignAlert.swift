@@ -26,7 +26,7 @@ public struct UIAlertText: View {
     }
 }
 
-
+
 //Adding test UIAlert
 public struct UIAlertWindow: View {
     
