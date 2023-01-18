@@ -49,6 +49,31 @@ public struct UILargeButtonVKID: View {
 }
 // // // // // //
 
+public struct UITextHeavyButton: View {
+    
+    var text: String
+    var color: Color
+    var action: () -> Void
+    
+    public init(text: String, color: Color, action: @escaping () -> Void) {
+        self.text = text
+        self.color = color
+        self.action = action
+    }
+    
+    public var body: some View {
+        HStack {
+            Button(action: action) {
+                Text(text)
+                    .font(.system(size: 12))
+                    .bold()
+                    .foregroundColor(color)
+            }
+            Spacer()
+        }
+    }
+}
+
 public struct UITextButton: View {
     
     var action: () -> Void

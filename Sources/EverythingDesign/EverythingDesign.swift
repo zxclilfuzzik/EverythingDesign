@@ -3,7 +3,7 @@ import UIKit
 
 let widths = UIWindow().screen.bounds.width * 0.95
 
-public struct TitleComponents: View {
+public struct UITitle: View {
     
     var title: String
     
