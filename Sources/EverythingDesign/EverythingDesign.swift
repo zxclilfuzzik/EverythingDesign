@@ -21,3 +21,19 @@ public struct UITitle: View {
         }
     }
 }
+
+public struct UIDivider: View {
+    
+    var color: Color
+    
+    public init(color: Color){
+        self.color = color
+    }
+    
+    public var body: some View {
+        Divider()
+            .frame(width: widths)
+            .foregroundColor(color)
+    }
+    
+}
