@@ -33,7 +33,7 @@ public struct UIDivider: View {
     public var body: some View {
         Divider()
             .frame(width: widths)
-            .foregroundColor(color)
+            .background(color)
     }
     
 }
