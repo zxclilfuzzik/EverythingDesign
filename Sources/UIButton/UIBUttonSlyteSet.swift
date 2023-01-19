@@ -7,7 +7,7 @@
 import UIKit
 import SwiftUI
 
-let widths = UIWindow().screen.bounds.width * 0.95
+let widths = UIWindow().screen.bounds.width * 0.9
 
 struct largeButtonStyle: ButtonStyle {
     
