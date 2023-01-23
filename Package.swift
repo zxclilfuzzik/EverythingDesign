@@ -31,6 +31,10 @@ let package = Package(
             name: "EverythingDesignTextField",
             path: "Sources/UITextField"
         ),
+//        .target(
+//            name: "UITextFieldStyle",
+//            path: "Sources/UITextField"
+//        ),
         .target(name: "EverythingDesignAlert",
                 path: "Sources/UIAlert"),
         .target(

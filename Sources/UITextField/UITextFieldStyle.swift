@@ -4,8 +4,8 @@ import UIKit
 
 let widths = UIWindow().screen.bounds.width * 0.9
 
-struct LargeTextField: TextFieldStyle {
-    func _body(configuration: TextField<Self._Label>) -> some View {
+public struct LargeTextField: TextFieldStyle {
+    public func _body(configuration: TextField<Self._Label>) -> some View {
         configuration
             .padding(.leading)
             .frame(width: widths, height: 50)
