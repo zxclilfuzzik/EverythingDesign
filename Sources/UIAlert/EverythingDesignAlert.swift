@@ -51,6 +51,34 @@ public struct UIAlertWindow: View {
             }
         }
         .frame(width: widths, height: 70)
+        .cornerRadius(15)
+    }
+}
+
+public struct UIAlertWindowError: View {
+    
+    var alertText: String
+    
+    public init(alertText: String) {
+        self.alertText = alertText
+    }
+    
+    public var body: some View {
+        VStack(spacing: 0) {
+            ZStack {
+                Color.red
+                HStack(spacing: 0) {
+                    Text(alertText)
+                        .foregroundColor(.white)
+                        .fontWeight(.medium)
+                        .font(.system(size: 15))
+                    Spacer()
+                }
+                .padding(.leading, 22)
+            }
+        }
+        .frame(width: widths, height: 70)
+        .cornerRadius(15)
     }
 }
 // // //
