@@ -40,17 +40,17 @@ public struct UIAlertWindow: View {
         VStack(spacing: 0) {
             ZStack {
                 Color.green
+                HStack(spacing: 0) {
+                    Text(alertText)
+                        .foregroundColor(.white)
+                        .fontWeight(.medium)
+                        .font(.system(size: 15))
+                    Spacer()
+                }
+                .padding(.leading, 22)
             }
-            HStack(spacing: 0) {
-                Text(alertText)
-                    .foregroundColor(.white)
-                    .fontWeight(.medium)
-                    .font(.system(size: 15))
-                Spacer()
-            }
-            .padding(.leading, 22)
         }
-        .frame(width: widths)
+        .frame(width: widths, height: 70)
     }
 }
 // // //
