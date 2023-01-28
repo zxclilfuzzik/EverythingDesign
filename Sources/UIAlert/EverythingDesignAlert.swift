@@ -32,6 +32,10 @@ public struct UIAlertWindow: View {
     
     var alertText: String
     
+    public init(alertText: String) {
+        self.alertText = alertText
+    }
+    
     public var body: some View {
         VStack(spacing: 0) {
             ZStack {
