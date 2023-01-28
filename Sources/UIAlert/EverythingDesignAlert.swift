@@ -45,12 +45,12 @@ public struct UIAlertWindow: View {
                         .foregroundColor(.white)
                         .fontWeight(.medium)
                         .font(.system(size: 15))
-//                        .padding(.leading, 22)
+                        .padding(.leading, 22)
                     Spacer()
                 }
             }
         }
-        .frame(width: widths, height: 70)
+//        .frame(width: widths, height: 70)
         .cornerRadius(15)
     }
 }
@@ -72,12 +72,12 @@ public struct UIAlertWindowError: View {
                         .foregroundColor(.white)
                         .fontWeight(.medium)
                         .font(.system(size: 15))
-//                        .padding(.leading, 22)
+                        .padding(.leading, 22)
                     Spacer()
                 }
             }
         }
-        .frame(width: widths, height: 70)
+//        .frame(width: widths, height: 70)
         .cornerRadius(15)
     }
 }
