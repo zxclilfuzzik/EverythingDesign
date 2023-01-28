@@ -50,7 +50,7 @@ public struct UIAlertWindow: View {
                 }
             }
         }
-//        .frame(width: widths, height: 70)
+        .frame(height: 70)
         .cornerRadius(15)
     }
 }
@@ -77,7 +77,7 @@ public struct UIAlertWindowError: View {
                 }
             }
         }
-//        .frame(width: widths, height: 70)
+        .frame(height: 70)
         .cornerRadius(15)
     }
 }
