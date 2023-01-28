@@ -45,7 +45,7 @@ public struct UIAlertWindow: View {
                         .foregroundColor(.white)
                         .fontWeight(.medium)
                         .font(.system(size: 15))
-                        .padding(.leading, 22)
+//                        .padding(.leading, 22)
                     Spacer()
                 }
             }
@@ -72,7 +72,7 @@ public struct UIAlertWindowError: View {
                         .foregroundColor(.white)
                         .fontWeight(.medium)
                         .font(.system(size: 15))
-                        .padding(.leading, 22)
+//                        .padding(.leading, 22)
                     Spacer()
                 }
             }
